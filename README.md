@@ -44,11 +44,11 @@ Graphics:
 この記事で評価するフリーの事前顔学習済みモデルは以下の11種類です。
 - VGG-Face
 - FaceNet
+- FaceNet512
 - OpenFace
 - DeepFace
 - DeepID
 - ArcFace
-- Dlib
 - SFace
 - GhostFaceNe
 - dlib
@@ -71,6 +71,7 @@ https://zenn.dev/ykesamaru/articles/38329e86116f2b
 
 #### Dockerfile
 :::details deepface用Dockerfile
+```bash deepface用Dockerfile
 # base image
 FROM python:3.8.12
 LABEL org.opencontainers.image.source https://github.com/serengil/deepface
@@ -140,6 +141,7 @@ ENV PYTHONUNBUFFERED=1
 # -----------------------------------
 # set working directory for runtime
 WORKDIR /app/deepface
+```
 :::
 
 #### 事前顔学習モデル評価コード
@@ -409,7 +411,7 @@ if __name__ == "__main__":
 :::
 
 #### 実行結果
-![](assets/2025-01-04-11-01-32.png)
+![](https://raw.githubusercontent.com/yKesamaru/github_face_recognition_comparison/refs/heads/master/assets/2025-01-04-11-01-32.png)
 
 ### JAPANESE FACE V1リポジトリ
 [tokaikaoninsho/face01_gpu](https://hub.docker.com/r/tokaikaoninsho/face01_gpu)からpullしてください。
@@ -906,7 +908,7 @@ if __name__ == "__main__":  # Pythonスクリプトが直接実行された時�
   - 0.9812
 
 #### 実行結果
-![](https://raw.githubusercontent.com/yKesamaru/github_face_recognition_comparison/refs/heads/master/assets/roc_plot.png)
+![](https://raw.githubusercontent.com/yKesamaru/github_face_recognition_comparison/refs/heads/master/assets/roc_plot2.png)
 
 ![](https://raw.githubusercontent.com/yKesamaru/github_face_recognition_comparison/refs/heads/master/assets/auc_time.png)
 
