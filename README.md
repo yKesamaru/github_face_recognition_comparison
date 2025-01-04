@@ -10,12 +10,12 @@
 
 公開されている各顔学習モデルの精度および照合にかかる時間を調査されている方は参考にしてください。
 
-![](assets/eye-catch.png)
+![](https://raw.githubusercontent.com/yKesamaru/github_face_recognition_comparison/refs/heads/master/assets/eye-catch.png)
 
 ## 最初に結論
-![](assets/roc_plot.png)
+![](https://raw.githubusercontent.com/yKesamaru/github_face_recognition_comparison/refs/heads/master/assets/roc_plot.png)
 
-![](assets/auc_time.png)
+![](https://raw.githubusercontent.com/yKesamaru/github_face_recognition_comparison/refs/heads/master/assets/auc_time.png)
 
 ## 環境
 :::details 評価用ホスト環境
@@ -789,7 +789,7 @@ if __name__ == "__main__":
 :::
 
 #### 実行結果
-![](assets/2025-01-04-11-02-24.png)
+![](https://raw.githubusercontent.com/yKesamaru/github_face_recognition_comparison/refs/heads/master/assets/2025-01-04-11-02-24.png)
 
 ### ROC曲線描画
 すべての結果を1つのプロット図に統合します。
@@ -905,9 +905,9 @@ if __name__ == "__main__":  # Pythonスクリプトが直接実行された時�
   - 0.9812
 
 #### 実行結果
-![](assets/roc_plot.png)
+![](https://raw.githubusercontent.com/yKesamaru/github_face_recognition_comparison/refs/heads/master/assets/roc_plot.png)
 
-![](assets/auc_time.png)
+![](https://raw.githubusercontent.com/yKesamaru/github_face_recognition_comparison/refs/heads/master/assets/auc_time.png)
 
 ## 評価
 dlibとJAPANESE FACE V1ですが、顔検出においてGPUが使えないトラブルがありました。このためこの2種についての処理時間はもっと短くなるはずです。
