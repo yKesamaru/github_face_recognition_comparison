@@ -1,0 +1,12 @@
+venv
+weights
+.deepface
+deepface
+api
+tests
+scripts
+icon
+benchmarks
+.vscode
+assets/models/
+assets/若年日本人女性/

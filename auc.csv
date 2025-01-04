@@ -1,0 +1,11 @@
+VGG-Face,0.8722
+FaceNet,0.8811
+FaceNet512,0.9204
+OpenFace,0.7033
+DeepFace,0.7901
+DeepID,0.6519
+ArcFace,0.9237
+SFace,0.7864
+GhostFaceNe,0.6582
+dlib,0.9428
+JAPANESE FACE V1,0.9812

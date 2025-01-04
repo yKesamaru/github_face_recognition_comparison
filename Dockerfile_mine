@@ -1,0 +1,31 @@
+# ベースイメージとして NVIDIA が提供する TensorFlow GPU イメージを使用
+FROM tensorflow/tensorflow:latest-gpu
+
+# 必要なパッケージをインストール
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    python3-pip \
+    python3-dev \
+    build-essential \
+    cmake \
+    git \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# 作業ディレクトリを設定
+WORKDIR /workspace
+
+# pip、wheel、setuptoolsをアップグレード
+RUN pip install --upgrade pip wheel setuptools
+
+# # blinkerを強制的にアップグレード
+# RUN pip install --ignore-installed blinker
+
+# # 必要なPythonライブラリをインストール
+# RUN pip install --no-deps deepface tf_keras dlib
+# RUN pip install deepface
+
+# コンテナ内で作業するためのディレクトリを設定
+WORKDIR /workspace
+
+RUN git clone https://github.com/serengil/deepface.git
+RUN cd deepface
+RUN pip install -e .
