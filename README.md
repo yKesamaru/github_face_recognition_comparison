@@ -13,7 +13,8 @@
 ![](https://raw.githubusercontent.com/yKesamaru/github_face_recognition_comparison/refs/heads/master/assets/eye-catch.png)
 
 ## 最初に結論
-![](https://raw.githubusercontent.com/yKesamaru/github_face_recognition_comparison/refs/heads/master/assets/roc_plot.png)
+
+![](https://raw.githubusercontent.com/yKesamaru/github_face_recognition_comparison/refs/heads/master/assets/roc_plot2.png)
 
 ![](https://raw.githubusercontent.com/yKesamaru/github_face_recognition_comparison/refs/heads/master/assets/auc_time.png)
 
